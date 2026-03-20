@@ -36,5 +36,5 @@ Make sure this file exists inside the package.
 ## Notes
 
 - Expects images normalized to [0,1]
-- Uses torchvision VGG16 backbone trained using ImageNet (from from torchvision.models import VGG16_Weights)
+- Uses torchvision VGG16 backbone trained using ImageNet (from torchvision.models import VGG16_Weights)
 - Designed for internal / research use
