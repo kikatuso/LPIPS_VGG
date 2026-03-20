@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lpips_vgg"
+version = "0.1.0"
+description = "Lightweight LPIPS VGG implementation"
+authors = [{ name = "Zuzanna Wakefield-Skorniewska" }]
+requires-python = ">=3.9"
+
+dependencies = [
+    "torch",
+    "torchvision"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lpips_vgg*"]
+
+[tool.setuptools.package-data]
+lpips_vgg = ["lpips_weights/*.pth"]
