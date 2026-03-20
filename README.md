@@ -1,6 +1,6 @@
 # lpips-vgg
 
-Lightweight LPIPS (Learned Perceptual Image Patch Similarity) implementation using VGG.
+Lightweight LPIPS (Learned Perceptual Image Patch Similarity) implementation using VGG16.
 
 ## Install
 
@@ -27,7 +27,7 @@ print(loss)
 
 ## Weights
 
-The pretrained VGG weights are loaded automatically from:
+The pretrained VGG16 weights are loaded automatically from:
 
 lpips_vgg/lpips_weights/vgg.pth
 
@@ -36,5 +36,5 @@ Make sure this file exists inside the package.
 ## Notes
 
 - Expects images normalized to [0,1]
-- Uses torchvision VGG backbone
+- Uses torchvision VGG16 backbone trained using ImageNet (from from torchvision.models import VGG16_Weights)
 - Designed for internal / research use
