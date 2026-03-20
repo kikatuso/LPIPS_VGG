@@ -8,6 +8,9 @@ pip install .
 
 ## Usage
 
+```python
+
+
 from lpips_vgg import LPIPS
 import torch
 
@@ -19,6 +22,8 @@ y = torch.randn(1, 3, 256, 256)
 
 loss = loss_fn(x, y)
 print(loss)
+
+```
 
 ## Weights
 
