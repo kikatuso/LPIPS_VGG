@@ -16,7 +16,7 @@ import torch
 
 loss_fn = LPIPS()
 
-# example tensors (N, C, H, W) in range [-1, 1]
+# example tensors (N, C, H, W) in range [0,1]
 x = torch.randn(1, 3, 256, 256)
 y = torch.randn(1, 3, 256, 256)
 
