@@ -8,8 +8,6 @@ from torchvision.models import VGG16_Weights
 from torchvision import models
 from pathlib import Path
 
-os.environ['TORCH_HOME'] = '/gpfs3/well/papiez/users/zwk579/.cache/torch/hub/checkpoints/'
-
 class LossTerm(nn.Module):
     def __init__(self,weight=1.0,factor=1.0,start_iter=None,start_epoch=None):
         super(LossTerm, self).__init__()
